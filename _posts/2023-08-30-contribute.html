@@ -1,0 +1,215 @@
+---
+layout: post
+title: "Como contribuir para projetos Open Source - um guia para Technical Writers"
+subtitle: "Aprenda a buscar projetos open source para contribuir e ganhar experiência"
+date: 2023-08-30 11:00:13 -0400
+background: '/img/posts/04.jpg'
+---
+<p>Essa é uma tradução do artigo <a
+        href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-for-technical-writers/">How to
+        Contribute to Open Source - a Guide for Technical Writers,</a> escrito por <a
+        href="https://www.linkedin.com/in/valentine-gatwiri-72901618a/">Valentine Gatwiri.</a></p>
+<strong>
+    <p>Contribuir para um projeto opensource pode ser assustador, especialmente se você nunca fez isso antes, ou se você
+        está acostumado a fazer documentação ao invés de código </p>
+</strong>
+Este guia ajudará os tech writers a começar a contribuir para projetos de código aberto e descreverá algumas das
+armadilhas comuns que você pode encontrar ao começar a contribuir.
+<p>Ele também destacará alguns dos benefícios de contribuir para o código aberto e fornecerá alguns recursos adicionais
+    para começar a contribuir para o código aberto como redator técnico </p>
+</p>
+
+<u>
+    O que é open source?
+</u>
+<p>
+    Código aberto é uma forma colaborativa de desenvolver e distribuir software. Pessoas de todo o mundo contribuem para
+    projetos de código aberto adicionando recursos, corrigindo bugs, respondendo perguntas, traduzindo textos ou
+    escrevendo tutoriais
+</p>
+
+<u>
+    Por quê contribuir?
+</u>
+<p>
+    Contribuir com software de código aberto é uma das melhores maneiras para os redatores técnicos e outros
+    trabalhadores do conhecimento retribuirem e fazerem a diferença.</p>
+
+<p>Você pode ajudar a melhorar o software que usa todos os dias ou pode aprender com o exemplo de outras pessoas que
+    contribuíram antes de você. Além disso, é uma ótima maneira de conhecer pessoas com interesses comuns. E quando suas
+    contribuições forem apreciadas, você se sentirá parte da comunidade.</p>
+
+<p>Você deve estar se perguntando – quando você deve contribuir? Bem, se você é novo no código aberto, contribua no seu
+    próprio ritmo – não se preocupe em tentar fazer muito cedo. Você encontrará aquilo com que se sente confortável.</p>
+
+<p>Contribuir para o código aberto não apenas aumentará seu conjunto de habilidades, mas também permitirá que você
+    desenvolva contatos dentro da comunidade e até mesmo crie oportunidades para trabalho freelance.</p>
+
+<p>Leva algum tempo para desenvolver o conhecimento e as habilidades necessárias para se tornar um contribuidor ativo
+    (especialmente porque a documentação geralmente requer um conjunto de habilidades diferente da programação), mas
+    vale a pena o investimento.
+
+</p>
+
+<u>
+    Desafios para contribuir
+</u>
+<p> Os redatores técnicos podem enfrentar vários desafios quando começam a contribuir para projetos de código aberto. Um
+    dos mais comuns é não ter certeza da melhor forma de contribuir, principalmente se você ainda não sabe nada sobre o
+    projeto.</p>
+
+<p>Você também pode não ter certeza sobre onde seu trabalho deve ir ou o que se espera dos colaboradores. Existem
+    algumas maneiras de contornar esse problema: você pode ler o arquivo <code>README</code> e/ou a documentação do
+    projeto para ver
+    se eles possuem diretrizes de contribuição. Você também pode entrar em contato com a equipe por trás do projeto e
+    pedir ajuda.
+</p>
+
+<u>
+    Como contribuir para projetos Open Source
+</u>
+<p>
+    Primeiro, você deseja encontrar um projeto no GitHub com o qual deseja contribuir. Você pode ler este tutorial sobre
+    como pesquisar no GitHub e encontrar projetos.</p>
+
+<p>Em seguida, você desejará abrir o <code>README</code> e certificar-se de que entendeu as instruções fornecidas.</p>
+
+<p>Em seguida, bifurque o repositório clicando em Fork localizado no canto superior direito da tela.
+</p>
+
+<p>Clone o repositório bifurcado em seu computador local usando o seguinte comando:</p>
+
+<p> git clone
+    <LINK TO THE REPO>
+</p>
+
+<p>Você verá o link do repositório ao clicar no menu suspenso do código.</p>
+
+<p>Depois de cloná-lo, abra o diretório que contém seu novo fork e comece a adicionar sua contribuição.</p>
+
+<p>Quando terminar, envie suas alterações no GitHub usando as seguintes instruções:
+<pre class="language-bash" tabindex="0">
+    <code class="language-bash">
+        <span class="token function">git</span> status //displays <span class="token function">which</span> modifications have been staged.
+        <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> // adds changes to the cloned repo
+        <span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"changes"</span> //performs a commit to the cloned repo
+        <span class="token function">git</span> branch <span class="token parameter variable">-M</span> changes //creates a new branch
+        <span class="token function">git</span> push <span class="token parameter variable">-u</span> origin changes //pushes the changes
+</code>
+</pre>
+</p>
+
+<p>O GitHub solicitará que você crie uma solicitação pull após enviar suas alterações para o repositório clonado. Vá em
+    frente e crie a solicitação pull e espere que os mantenedores mesclem seu repositório clonado com o repositório
+    principal.</p>
+
+<p><strong>Certifique-se de incorporar modificações upstream em seu repositório local</strong> se você deu fork no
+    projeto a alguns passos atrás.</p>
+
+<p>Se você encontrar um arquivo grande, instale o <code>git-lfs</code> se ainda não estiver instalado com o seguinte
+    comando: <code>brew
+    install git-lfs</code></p>
+
+<p>Ao baixar lentamente as versões apropriadas de arquivos enormes, a extensão Git LFS (Large File Storage), criada pela
+    Atlassian, GitHub e alguns outros colaboradores de código aberto, diminui o impacto de arquivos grandes em seu
+    repositório</p>
+
+<p>Você também pode usar a <a
+        href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage"></a>documentação
+    a seguir para instalar o <code>git-lfs</code>.</p>
+
+<u>
+    Melhores práticas quando contribuindo a projetos open-source.
+</u>
+<p>
+<p><strong>1. </strong>Identifique uma área onde você possa ajudar e encontre o projeto relevante no GitHub.</p>
+<p><strong>2. </strong>Leia a documentação de quaisquer projetos ou programas que possam ser semelhantes àquele em que
+    você está interessado. Isso lhe dará uma melhor compreensão do que está envolvido na contribuição e do que outras
+    pessoas contribuíram.</p>
+<p><strong>3. </strong>Pesquise os problemas rotulados como bons primeiros problemas e leia-os – normalmente são
+    bastante fáceis de resolver.</p>
+<p><strong>4. </strong>Prepare seu código seguindo as diretrizes de contribuição do projeto.</p>
+<p><strong>5. </strong>Escreva uma solicitação pull com sua solução e explique por que ela resolve o problema em
+    questão. Inclua links para recursos relacionados, como tutoriais, se necessário.</p>
+<p><strong>6. </strong>Envie sua solicitação pull para revisão. A equipe discutirá se ele deve ser aceito no
+    repositório e atualizará você sobre a decisão.</p>
+<p><strong>7. </strong>Se eles decidirem não aceitar sua solicitação pull, pergunte como você poderia abordar suas
+    preocupações para que eles reconsiderem a aceitação posteriormente.</p>
+<p><strong>8. </strong>Se eles aceitarem sua solicitação de pull, agradeça-lhes!</p>
+<p><strong>9. </strong>Continue procurando novos problemas para resolver e compartilhe seu progresso ao longo do
+    caminho!</p>
+
+</p>
+
+<u>
+    Quais tipos de contribuição posso fazer?
+</u>
+<p>
+    Você pode contribuir com esses projetos de várias maneiras, incluindo enviar solicitações pull para correções de
+    bugs ou acréscimos de recursos, escrever documentação sobre como usar o software, melhorar a documentação atual,
+    traduzir o texto para outro idioma e corrigir erros de digitação.</p>
+
+<p>Você deve se envolver escolhendo um projeto no qual esteja interessado e lendo sua documentação antes de começar.</p>
+
+<p>Escrever para um projeto de código aberto é uma ótima maneira de se estabelecer como um especialista em sua área e se
+    posicionar para futuras oportunidades de freelance.</p>
+
+<p>Uma coisa que os redatores técnicos devem sempre ter em mente ao escrever para projetos de código aberto é que seu
+    público é formado principalmente por desenvolvedores. Isso significa que eles precisam de mais detalhes técnicos do
+    que você encontraria em outros tipos de escrita.
+</p>
+
+<u>
+    Onde posso encontrar projetos open-source?
+</u>
+<p>Há vários lugares onde você pode encontrar projetos de código aberto. GitHub é o local mais popular para projetos de
+    código aberto, mas também existem repositórios no BitBucket, Gitlab e outros sites.</p>
+
+<p>Se você tem uma ideia para um projeto de código aberto que ainda não existe, comece reunindo seu plano em um arquivo
+    <code>README</code>. Se você não tiver certeza de como começar a contribuir para um projeto existente, verifique sua
+    documentação
+    ou leia algumas solicitações pull antes de enviar uma de sua preferência.
+
+</p>
+
+<u>
+    Exemplos de projetos
+</u>
+<p>
+</p><strong>
+    <p><a href="https://github.com/h5bp/html5-boilerplate"> Projeto HTML5 Boilerplate </a>
+</strong> é um projeto de código aberto popular para desenvolvedores web que
+fornece código HTML, CSS e Javascript para construir um site ou aplicativo web.</p>
+<strong>
+    <p><a href="https://jekyllrb.com/docs/contributing/"> Jekyll </a>
+</strong> é um gerador de sites estáticos escrito em Ruby projetado para blogs pessoais.</p>
+<p><a href="https://github.com/reactjs/reactjs.org"> <strong>Documentação do React.js</a> </strong> A documentação do
+    React.js fornece informações oficiais sobre como
+    usar o react.js</p>
+<p><a href="https://github.com/github/docs"> <strong>GitHub Pages</a></strong> contêm tudo o que você precisa
+    saber sobre o GitHub.</p>
+<p><a href="https://github.com/galaxyproject/training-material"> <strong>Galaxy Project (material de
+            treinamento)</a></strong> Uma coleção
+    de materiais de treinamento sobre o
+    projeto Galaxy, que é uma plataforma aberta baseada na web para pesquisa computacional com uso intensivo de
+    dados que se estende além das ciências biológicas.</p>
+<p><a href="https://github.com/cncf"></a><strong>CNCF (Cloud Native Computing Foundation) </strong> CNCF é uma
+    computação nativa em nuvem de código
+    aberto que hospeda projetos como Kubernetes e Prometheus para tornar o nativo em nuvem onipresente e
+    sustentável.</p>
+<p>Você também pode conferir o <u>Google Season of Docs</u>, que fornece assistência a projetos de código aberto
+    no aprimoramento de sua documentação e permite que escritores técnicos qualificados adquiram experiência em
+    código aberto.</p>
+
+<p>Existem muitas maneiras diferentes de contribuir, o que significa que há algo para todos.</p>
+</p>
+
+<u>
+    Conclusão:
+</u>
+<p>
+    Contribuir para o código aberto é uma ótima maneira para redatores técnicos e outros criadores de conteúdo
+    compartilharem seu conhecimento com o mundo.
+
+    Existem muitas maneiras diferentes de contribuir, o que significa que há algo para todos.
+</p>
